@@ -1,11 +1,12 @@
+
 <html>
 
 <head>
 <title>Learn HTML</title>
 </head>
 
-<body>
-
+<body style="background-image: Screenshot 2026-01-12 114437.png;">
+<section style="background-color: white;">
 <h3>Types of header based on size.</h3>
 <h1>This is h1.</h1>
 <h2>This is h2.</h2>
@@ -41,8 +42,8 @@
 </section>
 
 
-<h3><i>Creating Lists.</i></h3>
-<h4><i>Ordered Lists.</i></h4>
+<h3><i>Creating Lists</i></h3>
+<h4><i>Ordered Lists</i></h4>
 <p><i><u>By default, type is numeric.</u></i></p>
 <ol type="a">
     <li>First</li>
@@ -56,7 +57,7 @@
     <li>Third</li>
 </ol>
 
-<h4><i>Unordered Lists.</i></h4>
+<h4><i>Unordered Lists</i></h4>
 <p><i><u>By default, type is circle.</u></i></p>
 <ul type="square">
     <li>First</li>
@@ -64,7 +65,7 @@
     <li>Third</li>
 </ul>
 
-<h4><i>Definition Lists.</i></h4>
+<h4><i>Definition Lists</i></h4>
 <dl>
   <dt>HTML</dt>
   <dd>HyperText Markup Language, the standard language for creating web pages.</dd>
@@ -82,11 +83,11 @@
 <li><b>Email:</b><a href="mailto:collab.prakhar0427@gmail.com"> collab.prakhar0427@gmail.com</a></li>
 <li><b>Phone:</b> NA</li>
 <li><b>Address:</b> Greater Noida, Uttar Pradesh</li>
-<p>Back to the <a href="https:/www.youtube.com/@codes_backside">video<a>.</p>
+<p>Back to the <a href="https:/www.youtube.com/@codes_backside">channel<a>.</p>
 </ul>
 </section>
 
-<h3>Table for Student Data.</h3>
+<h3>Table for Student Data</h3>
 <table>
   <tr style="background-color: black; color:white">
     <th>Sr. No.</th>
@@ -108,7 +109,7 @@
   </tr>
 </table>
 
-<h3>2x2 Table.</h3>
+<h3>2x2 Table</h3>
 <style>
 table, th, td {
   border: 1px solid black;
@@ -145,7 +146,7 @@ table, th, td {
     </tr>
 </table>
 
-<h3>Spanning in Table.</h3>
+<h3>Spanning in Table</h3>
 <table>
   <tr style="background-color: black; color:white">
     <td>A</td>
@@ -153,19 +154,91 @@ table, th, td {
     <td>C</td>
   </tr>
   <tr>
-    <colspan="2">
-        <td>D</td>
-    </colspan>
+    <td rowspan="3">D</td>
+    <td colspan="2">E</td>
   </tr>
   <tr style="background-color: grey; color:white">
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>F</td>
+    <td>G</td>
     </tr>
 </table>
 
+<h3>Cell Padding</h3>
+<table cellpadding="5">
+  <tr style="background-color: black; color:white">
+    <td>A</td>
+    <td>B</td>
+    <td>C</td>
+  </tr>
+  <tr>
+    <td rowspan="3">D</td>
+    <td colspan="2">E</td>
+  </tr>
+  <tr style="background-color: grey; color:white">
+    <td>F</td>
+    <td>G</td>
+    </tr>
+</table>
+
+<h3>Cell Spacing</h3>
+<table cellspacing="5">
+  <tr style="background-color: black; color:white">
+    <td>A</td>
+    <td>B</td>
+    <td>C</td>
+  </tr>
+  <tr>
+    <td rowspan="3">D</td>
+    <td colspan="2">E</td>
+  </tr>
+  <tr style="background-color: grey; color:white">
+    <td>F</td>
+    <td>G</td>
+    </tr>
+</table>
+
+<h3>Frames</h3>
+<frameset>
+  <iframe src="file:///C:/Users/Student/Desktop/WebDev.html?" frameborder="0"></iframe>
+</frameset>
+
+<h3>Frame spanning</h3>
+
+<frameset cols="30%">
+  <iframe src="file:///C:/Users/Student/Desktop/WebDev.html?" frameborder="0"></iframe>
+</frameset>
+</section>
+
+<h3>Forms</h3>
+Search:<input type="search">
+<section style="flex: auto; text-align: center;">
+  <form action="">
+    Full Name:<input type="text" name="fname" minlength="3">
+	<br>
+    Gender: Male<input type="radio" name="gender"> Female<input type="radio" name="gender">
+	<br>  
+    D.O.B.:<input type="date">
+  <br>
+    Known Languages: Python<input type="checkbox"> C++<input type="checkbox"> Java<input type="checkbox">
+	<br>
+    Password:<input type="password" value ="123" minlength="3" maxlength="15">
+	<br>
+    <button>Submit</button>
+  </form>
+</section>
+
+<h3>Medias</h3>
+<section>
+  <h4>Audio</h4>
+  <audio controls="auto" src=""></audio>
+
+  <h4>Video</h4>
+  <video controls="auto" src=""></video>
+</section>
 
 
+
+</section>
 </body>
 
 </html>
